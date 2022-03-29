@@ -1,5 +1,7 @@
 package com.matthew.mattamsmod;
 
+import com.matthew.mattamsmod.brass.BrassModule;
+import com.matthew.mattamsmod.register.Registry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.lwjgl.system.CallbackI;
 
 import java.util.stream.Collectors;
 
@@ -26,12 +29,17 @@ public class MattamsMod
     // Mod ID
     public static final String MOD_ID = "mattamsmod";
 
+    public static BrassModule BRASS_MODULE = new BrassModule();
+
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public MattamsMod() {
         // Get event but interface
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        //register the deferred registers on the event bus
+        Registry.register(eventBus);
 
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
@@ -55,7 +63,7 @@ public class MattamsMod
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        //LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
