@@ -1,4 +1,6 @@
 {
   "item.mattamsmod.brass_ingot": "Brass Ingot",
-  "item.mattamsmod.brass_nugget": "Brass Nugget"
+  "item.mattamsmod.brass_nugget": "Brass Nugget",
+  "block.mattamsmod.brass_ore": "Brass Ore",
+  "block.mattamsmod.brass": "Brass Block"
 }
