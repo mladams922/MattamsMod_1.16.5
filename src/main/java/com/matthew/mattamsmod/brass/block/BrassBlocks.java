@@ -14,4 +14,11 @@ public class BrassBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool()
                     .hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> BRASS = Registry.registerBlock("brass",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(5f)));
 }
