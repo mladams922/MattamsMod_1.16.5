@@ -3,6 +3,7 @@ package com.matthew.mattamsmod.brass.block;
 import com.matthew.mattamsmod.base.register.Registry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
@@ -21,4 +22,12 @@ public class BrassBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool()
                     .hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> BRASS_STAIRS = Registry.registerBlock("brass_stairs",
+            () -> new StairsBlock(() -> BRASS.get().getDefaultState(),
+                    AbstractBlock.Properties.create(Material.IRON)
+                            .harvestLevel(2)
+                            .harvestTool(ToolType.PICKAXE)
+                            .setRequiresTool()
+                            .hardnessAndResistance(5f)));
 }
