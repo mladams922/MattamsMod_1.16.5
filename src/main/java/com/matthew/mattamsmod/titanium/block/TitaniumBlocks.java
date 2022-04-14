@@ -1,4 +1,4 @@
-package com.matthew.mattamsmod.brass.block;
+package com.matthew.mattamsmod.titanium.block;
 
 import com.matthew.mattamsmod.base.register.Registry;
 import net.minecraft.block.AbstractBlock;
@@ -7,18 +7,18 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
-public class BrassBlocks {
-    public static final RegistryObject<Block> BRASS_ORE = Registry.registerBlock("brass_ore",
+public class TitaniumBlocks {
+    public static final RegistryObject<Block> TITANIUM_ORE = Registry.registerBlock("titanium_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(2)
+                    .harvestLevel(3)
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool()
-                    .hardnessAndResistance(5f)));
+                    .hardnessAndResistance(10f)));
 
-    public static final RegistryObject<Block> BRASS = Registry.registerBlock("brass",
+    public static final RegistryObject<Block> TITANIUM_BLOCK = Registry.registerBlock("titanium_block",
             () -> new Block(AbstractBlock.Properties.create(Material.IRON)
-                    .harvestLevel(2)
+                    .harvestLevel(3)
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool()
-                    .hardnessAndResistance(5f)));
+                    .hardnessAndResistance(10f)));
 }

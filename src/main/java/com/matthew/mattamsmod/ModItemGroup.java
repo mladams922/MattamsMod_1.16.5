@@ -1,8 +1,6 @@
 package com.matthew.mattamsmod;
 
-import com.matthew.mattamsmod.brass.BrassModule;
 import com.matthew.mattamsmod.brass.item.BrassItems;
-import com.matthew.mattamsmod.register.Registry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
