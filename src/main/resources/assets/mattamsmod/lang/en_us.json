@@ -4,7 +4,12 @@
   "item.mattamsmod.brass_nugget": "Brass Nugget",
   "block.mattamsmod.brass_ore": "Brass Ore",
   "block.mattamsmod.brass": "Brass Block",
+  "block.mattamsmod.brass_slab": "Brass Slab",
   "block.mattamsmod.brass_stairs": "Brass Stairs",
+  "block.mattamsmod.brass_fence": "Brass Fence",
+  "block.mattamsmod.brass_fence_gate": "Brass Fence Gate",
+  "block.mattamsmod.brass_button": "Brass Button",
+  "block.mattamsmod.brass_pressure_plate": "Brass Pressure Plate",
   "item.mattamsmod.firestone": "Firestone",
   "block.mattamsmod.firestone_block": "Firestone Block",
   "tooltip.mattamsmod.firestone": "Hold \u00A7eSHIFT\u00A7r for more information.",
@@ -12,5 +17,11 @@
   "item.mattamsmod.titanium_ingot": "Titanium Ingot",
   "item.mattamsmod.titanium_nugget": "Titanium Nugget",
   "block.mattamsmod.titanium_ore": "Titanium Ore",
-  "block.mattamsmod.titanium_block": "Titanium Block"
+  "block.mattamsmod.titanium_block": "Titanium Block",
+  "block.mattamsmod.titanium_slab": "Titanium Slab",
+  "block.mattamsmod.titanium_stairs": "Titanium Stairs",
+  "block.mattamsmod.titanium_fence": "Titanium Fence",
+  "block.mattamsmod.titanium_fence_gate": "Titanium Fence Gate",
+  "block.mattamsmod.titanium_button": "Titanium Button",
+  "block.mattamsmod.titanium_pressure_plate": "Titanium Pressure Plate"
 }
