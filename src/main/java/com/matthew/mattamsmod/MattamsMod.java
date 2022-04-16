@@ -1,7 +1,9 @@
 package com.matthew.mattamsmod;
 
 import com.matthew.mattamsmod.brass.BrassModule;
-import com.matthew.mattamsmod.register.Registry;
+import com.matthew.mattamsmod.firestone.FirestoneModule;
+import com.matthew.mattamsmod.base.register.Registry;
+import com.matthew.mattamsmod.titanium.TitaniumModule;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,7 +20,6 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.system.CallbackI;
 
 import java.util.stream.Collectors;
 
@@ -30,6 +31,8 @@ public class MattamsMod
     public static final String MOD_ID = "mattamsmod";
 
     public static BrassModule BRASS_MODULE = new BrassModule();
+    public static TitaniumModule TITANIUM_MODULE = new TitaniumModule();
+    public static FirestoneModule FIRESTONE_MODULE = new FirestoneModule();
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();

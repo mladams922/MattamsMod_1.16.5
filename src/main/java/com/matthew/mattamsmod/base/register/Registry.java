@@ -1,4 +1,4 @@
-package com.matthew.mattamsmod.register;
+package com.matthew.mattamsmod.base.register;
 
 import com.matthew.mattamsmod.MattamsMod;
 import com.matthew.mattamsmod.ModItemGroup;
