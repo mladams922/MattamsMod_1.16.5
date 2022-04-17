@@ -2,6 +2,11 @@
   "itemGroup.mattamsmodTab": "Mattams Mod",
   "item.mattamsmod.brass_ingot": "Brass Ingot",
   "item.mattamsmod.brass_nugget": "Brass Nugget",
+  "item.mattamsmod.brass_sword": "Brass Sword",
+  "item.mattamsmod.brass_pickaxe": "Brass Pickaxe",
+  "item.mattamsmod.brass_shovel": "Brass Shovel",
+  "item.mattamsmod.brass_axe": "Brass Axe",
+  "item.mattamsmod.brass_hoe": "Brass Hoe",
   "block.mattamsmod.brass_ore": "Brass Ore",
   "block.mattamsmod.brass": "Brass Block",
   "block.mattamsmod.brass_slab": "Brass Slab",
@@ -16,6 +21,11 @@
   "tooltip.mattamsmod.firestone_shift": "Strike on Netherrack or Obsidian for fire resistance.",
   "item.mattamsmod.titanium_ingot": "Titanium Ingot",
   "item.mattamsmod.titanium_nugget": "Titanium Nugget",
+  "item.mattamsmod.titanium_sword": "Titanium Sword",
+  "item.mattamsmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.mattamsmod.titanium_shovel": "Titanium Shovel",
+  "item.mattamsmod.titanium_axe": "Titanium Axe",
+  "item.mattamsmod.titanium_hoe": "Titanium Hoe",
   "block.mattamsmod.titanium_ore": "Titanium Ore",
   "block.mattamsmod.titanium_block": "Titanium Block",
   "block.mattamsmod.titanium_slab": "Titanium Slab",
@@ -23,5 +33,6 @@
   "block.mattamsmod.titanium_fence": "Titanium Fence",
   "block.mattamsmod.titanium_fence_gate": "Titanium Fence Gate",
   "block.mattamsmod.titanium_button": "Titanium Button",
-  "block.mattamsmod.titanium_pressure_plate": "Titanium Pressure Plate"
+  "block.mattamsmod.titanium_pressure_plate": "Titanium Pressure Plate",
+  "item.mattamsmod.emerald_axe": "Emerald Axe"
 }

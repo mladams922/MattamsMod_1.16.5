@@ -1,6 +1,7 @@
 package com.matthew.mattamsmod;
 
 import com.matthew.mattamsmod.brass.BrassModule;
+import com.matthew.mattamsmod.emerald.EmeraldModule;
 import com.matthew.mattamsmod.firestone.FirestoneModule;
 import com.matthew.mattamsmod.base.register.Registry;
 import com.matthew.mattamsmod.titanium.TitaniumModule;
@@ -33,6 +34,7 @@ public class MattamsMod
     public static BrassModule BRASS_MODULE = new BrassModule();
     public static TitaniumModule TITANIUM_MODULE = new TitaniumModule();
     public static FirestoneModule FIRESTONE_MODULE = new FirestoneModule();
+    public static EmeraldModule EMERALD_MODULE = new EmeraldModule();
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
