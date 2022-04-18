@@ -34,5 +34,14 @@
   "block.mattamsmod.titanium_fence_gate": "Titanium Fence Gate",
   "block.mattamsmod.titanium_button": "Titanium Button",
   "block.mattamsmod.titanium_pressure_plate": "Titanium Pressure Plate",
-  "item.mattamsmod.emerald_axe": "Emerald Axe"
+  "item.mattamsmod.emerald_axe": "Emerald Axe",
+  "block.mattamsmod.redwood_sapling": "Redwood Sapling",
+  "block.mattamsmod.redwood_leaves": "Redwood Leaves",
+  "block.mattamsmod.redwood_log": "Redwood Log",
+  "block.mattamsmod.redwood_wood": "Redwood Wood",
+  "block.mattamsmod.stripped_redwood_log": "Stripped Redwood Log",
+  "block.mattamsmod.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.mattamsmod.redwood_planks": "Redwood Planks",
+  "block.mattamsmod.redwood_slab": "Redwood Slab",
+  "block.mattamsmod.redwood_stairs": "Redwood Stairs"
 }
