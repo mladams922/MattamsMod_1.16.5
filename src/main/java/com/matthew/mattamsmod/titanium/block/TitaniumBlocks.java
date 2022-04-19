@@ -65,4 +65,20 @@ public class TitaniumBlocks {
                     .setRequiresTool()
                     .hardnessAndResistance(10f)
             ));
+
+    public static final RegistryObject<Block> TITANIUM_DOOR = Registry.registerBlock("titanium_door",
+            () -> new DoorBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(10f)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> TITANIUM_TRAPDOOR = Registry.registerBlock("titanium_trapdoor",
+            () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(10f)
+                    .notSolid()));
 }

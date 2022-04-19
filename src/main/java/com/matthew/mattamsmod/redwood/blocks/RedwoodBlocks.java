@@ -41,4 +41,34 @@ public class RedwoodBlocks {
     public static final RegistryObject<Block> REDWOOD_STAIRS = Registry.registerBlock("redwood_stairs",
             () -> new StairsBlock(() -> REDWOOD_PLANKS.get().getDefaultState(),
                     AbstractBlock.Properties.from(Blocks.OAK_STAIRS)));
+
+    public static final RegistryObject<Block> REDWOOD_FENCE = Registry.registerBlock("redwood_fence",
+            () -> new FenceBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.AXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(2f)));
+
+    public static final RegistryObject<Block> REDWOOD_FENCE_GATE = Registry.registerBlock("redwood_fence_gate",
+            () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.AXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(2f)));
+
+    public static final RegistryObject<Block> REDWOOD_BUTTON = Registry.registerBlock("redwood_button",
+            () -> new WoodButtonBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.AXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(2f)
+                    .doesNotBlockMovement()));
+
+    public static final RegistryObject<Block> REDWOOD_PRESSURE_PLATE = Registry.registerBlock("redwood_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING ,AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.AXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(2f)
+            ));
 }

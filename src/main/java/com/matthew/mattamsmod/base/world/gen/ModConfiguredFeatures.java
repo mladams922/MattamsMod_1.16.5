@@ -14,7 +14,7 @@ public class ModConfiguredFeatures {
                     new SimpleBlockStateProvider(RedwoodBlocks.REDWOOD_LOG.get().getDefaultState()),
                     new SimpleBlockStateProvider(RedwoodBlocks.REDWOOD_LEAVES.get().getDefaultState()),
                     new PineFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(4), FeatureSpread.create(5)),
-                    new MegaJungleTrunkPlacer(20, 4, 3),
+                    new MegaJungleTrunkPlacer(25, 5, 3),
                     new TwoLayerFeature(8, 4, 8))).setIgnoreVines().build()));
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String key, ConfiguredFeature<FC, ?> configuredFeature) {

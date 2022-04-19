@@ -1,4 +1,4 @@
-package com.matthew.mattamsmod.base;
+package com.matthew.mattamsmod.base.teirs;
 
 import com.matthew.mattamsmod.brass.BrassModule;
 import com.matthew.mattamsmod.brass.item.BrassItems;
