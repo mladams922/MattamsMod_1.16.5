@@ -62,6 +62,8 @@
   "block.mattamsmod.redwood_fence_gate": "Redwood Fence Gate",
   "block.mattamsmod.redwood_button": "Redwood Button",
   "block.mattamsmod.redwood_pressure_plate": "Redwood Pressure Plate",
+  "block.mattamsmod.redwood_door": "Redwood Door",
   "item.mattamsmod.oats": "Oats Seeds",
-  "block.mattamsmod.oats_crop": "Oats"
+  "block.mattamsmod.oats_crop": "Oats",
+  "block.mattamsmod.hyacinth": "Hyacinth"
 }

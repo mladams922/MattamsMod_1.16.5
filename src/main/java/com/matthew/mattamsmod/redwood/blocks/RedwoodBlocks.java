@@ -71,4 +71,12 @@ public class RedwoodBlocks {
                     .setRequiresTool()
                     .hardnessAndResistance(2f)
             ));
+
+    public static final RegistryObject<Block> REDWOOD_DOOR = Registry.registerBlock("redwood_door",
+            () -> new DoorBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.AXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(2f)
+                    .notSolid()));
 }

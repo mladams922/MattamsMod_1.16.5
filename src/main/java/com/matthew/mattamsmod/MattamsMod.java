@@ -93,11 +93,16 @@ public class MattamsMod
             RenderTypeLookup.setRenderLayer(TitaniumBlocks.TITANIUM_DOOR.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(TitaniumBlocks.TITANIUM_TRAPDOOR.get(), RenderType.getCutout());
 
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_DOOR.get(), RenderType.getCutout());
+            //RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_TRAPDOOR_DOOR.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
+
             RenderTypeLookup.setRenderLayer(CropsModule.OATS.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(CropsModule.HYACINTH.get(), RenderType.getCutout());
         });
 
-        RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

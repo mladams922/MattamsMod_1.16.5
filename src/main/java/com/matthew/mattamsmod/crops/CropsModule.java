@@ -3,13 +3,11 @@ package com.matthew.mattamsmod.crops;
 import com.matthew.mattamsmod.ModItemGroup;
 import com.matthew.mattamsmod.base.register.Registry;
 import com.matthew.mattamsmod.crops.oats.OatsBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CropsBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 
 public class CropsModule {
@@ -20,4 +18,7 @@ public class CropsModule {
             () -> new BlockItem(CropsModule.OATS.get(), new Item.Properties()
                     .food(new Food.Builder().hunger(1).saturation(0.1f).fastToEat().build())
                     .group(ModItemGroup.MATTAMS_GROUP)));
+
+    public static final RegistryObject<Block> HYACINTH = Registry.registerBlock("hyacinth",
+            () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
 }
