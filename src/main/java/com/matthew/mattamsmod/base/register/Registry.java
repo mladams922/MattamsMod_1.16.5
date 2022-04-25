@@ -32,6 +32,10 @@ public class Registry {
         return tempBlock;
     }
 
+    public static RegistryObject<Block> registerBlockOnly(String resLoc, Supplier<? extends Block> block){
+        return BLOCKS.register(resLoc, block);
+    }
+
     private static <T extends Block> void registerBlockItem(String resLoc, RegistryObject<T> block){
         ITEMS.register(resLoc, () -> new BlockItem(block.get(),
         new Item.Properties().group(ModItemGroup.MATTAMS_GROUP)));

@@ -65,4 +65,20 @@ public class BrassBlocks {
                     .setRequiresTool()
                     .hardnessAndResistance(5f)
                     ));
+
+    public static final RegistryObject<Block> BRASS_DOOR = Registry.registerBlock("brass_door",
+            () -> new DoorBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(5f)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> BRASS_TRAPDOOR = Registry.registerBlock("brass_trapdoor",
+            () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool()
+                    .hardnessAndResistance(5f)
+                    .notSolid()));
 }

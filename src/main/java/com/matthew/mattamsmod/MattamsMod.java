@@ -1,11 +1,21 @@
 package com.matthew.mattamsmod;
 
+import com.google.common.collect.ImmutableMap;
 import com.matthew.mattamsmod.brass.BrassModule;
+import com.matthew.mattamsmod.brass.block.BrassBlocks;
+import com.matthew.mattamsmod.crops.CropsModule;
+import com.matthew.mattamsmod.emerald.EmeraldModule;
 import com.matthew.mattamsmod.firestone.FirestoneModule;
 import com.matthew.mattamsmod.base.register.Registry;
+import com.matthew.mattamsmod.redwood.RedwoodModule;
+import com.matthew.mattamsmod.redwood.blocks.RedwoodBlocks;
 import com.matthew.mattamsmod.titanium.TitaniumModule;
+import com.matthew.mattamsmod.titanium.block.TitaniumBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.AxeItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +43,9 @@ public class MattamsMod
     public static BrassModule BRASS_MODULE = new BrassModule();
     public static TitaniumModule TITANIUM_MODULE = new TitaniumModule();
     public static FirestoneModule FIRESTONE_MODULE = new FirestoneModule();
+    public static EmeraldModule EMERALD_MODULE = new EmeraldModule();
+    public static RedwoodModule REDWOOD_MODULE = new RedwoodModule();
+    public static CropsModule CROPS_MODULE = new CropsModule();
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
@@ -62,11 +75,34 @@ public class MattamsMod
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
+        event.enqueueWork(() -> {
+            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
+                    .put(RedwoodBlocks.REDWOOD_LOG.get(), RedwoodBlocks.STRIPPED_REDWOOD_LOG.get())
+                    .put(RedwoodBlocks.REDWOOD_WOOD.get(), RedwoodBlocks.STRIPPED_REDWOOD_WOOD.get()).build();
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         //LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(BrassBlocks.BRASS_DOOR.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(BrassBlocks.BRASS_TRAPDOOR.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(TitaniumBlocks.TITANIUM_DOOR.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(TitaniumBlocks.TITANIUM_TRAPDOOR.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_DOOR.get(), RenderType.getCutout());
+            //RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_TRAPDOOR_DOOR.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(RedwoodBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(CropsModule.OATS.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(CropsModule.HYACINTH.get(), RenderType.getCutout());
+        });
+
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
